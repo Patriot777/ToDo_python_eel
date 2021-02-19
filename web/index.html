@@ -10,8 +10,10 @@
     <script type="text/javascript" src="/eel.js"></script>
 </head>
 <body class="b">
+
+    
     <!--JS Скрипт для виводу інформації про завдання-->
-<script>
+    <script>
     eel.add()
     eel.expose(public_task);
     function public_task(title){
@@ -19,21 +21,23 @@
         
         
         for(let i = 0; i < my_data.length; i++){
-            title_t = document.createElement('h4');
-            text = document.createElement('p');
-
-            title_t.setAttribute('class', 'monitor-task');
-            text.setAttribute('class', 'monitor-task');
-
-            document.body.appendChild(title_t);
-            document.body.appendChild(text);
-            title_t.innerHTML = my_data[i][0];
-            text.innerHTML = my_data[i][1];
+            
+            
+            let parent = document.getElementById('bugaga');
+            let h2 = document.createElement('h3');
+            let p = document.createElement('p');
+            h2.innerHTML = "hello WOOOOORLDDDDD";
+            p.innerHTML = "Bugagagagagga";
+            parent.appendChild(h2);
+            parent.appendChild(p);
+            
+            
+            
             
         }
-};
+    };
 </script>
-   <div class="container m-menu">
+<div class="container m-menu">
     <div class="row">
         <div class="col-12 my-nav-bar">
             <ul class="nav justify-content-center">
@@ -44,14 +48,21 @@
                     <a class="nav-link badge badge-secondary ml-3 mt-3" href="about.html">Add task</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link badge badge-secondary ml-3 mt-3" href="help.html">Help</a>
+                    <a class="nav-link badge badge-secondary ml-3 mt-3" href="help.html">Help</a>
                 </li>
-
+                
             </ul>
         </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12" id="bugaga">
+
         </div>
     </div>
-    
+</div>
 
 
 </body>
