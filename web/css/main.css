@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+
+.main{
+    font-size: 14pt;
+    background-color: #0000;
+    color: blue;
+}
+p{
+    text-align: justify;
+    font-size: 14pt;
+    color: oldlace;
+}
+.b{
+    background-image: url('background.jpg');
+    background-repeat: inherit;
+    background-size: cover;
+    
+}
+
+.m-menu{
+    color: oldlace;
+}
+/* Клас який відповідає за верхнє меню */
+.my-nav-bar a{
+    font-size: 10pt;
+    font-family: 'Lexend Mega', sans-serif;
+    padding: 5px 5px;
+}
+#title{
+    color: #FFFF;
+    font-weight: bold;
+}
+.monitor-task{
+    background-color: #7b7b7b ;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 10px 10px;
+}

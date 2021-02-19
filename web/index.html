@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list for programer</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body class="b">
+    <!--JS Скрипт для виводу інформації про завдання-->
+<script>
+    eel.add()
+    eel.expose(public_task);
+    function public_task(title){
+        my_data = title;
+        
+        
+        for(let i = 0; i < my_data.length; i++){
+            title_t = document.createElement('h4');
+            text = document.createElement('p');
+
+            title_t.setAttribute('class', 'monitor-task');
+            text.setAttribute('class', 'monitor-task');
+
+            document.body.appendChild(title_t);
+            document.body.appendChild(text);
+            title_t.innerHTML = my_data[i][0];
+            text.innerHTML = my_data[i][1];
+            
+        }
+};
+</script>
+   <div class="container m-menu">
+    <div class="row">
+        <div class="col-12 my-nav-bar">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link badge badge-secondary ml-3 mt-3" href="index.html">Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link badge badge-secondary ml-3 mt-3" href="about.html">Add task</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link badge badge-secondary ml-3 mt-3" href="help.html">Help</a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+
+
+</body>
+<script src="js/main.js"></script>
+</html>
