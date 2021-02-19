@@ -28,5 +28,5 @@ def add():
     #db.commit()
     returnet_data()
 
-eel.start('index.html', size=(850, 500), jinja_templates="templates")
+eel.start('index.html', size=(1366, 768), jinja_templates="templates")
 

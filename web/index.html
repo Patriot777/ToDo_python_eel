@@ -23,11 +23,11 @@
         for(let i = 0; i < my_data.length; i++){
             
             
-            let parent = document.getElementById('bugaga');
+            let parent = document.getElementById('content');
             let h2 = document.createElement('h3');
             let p = document.createElement('p');
-            h2.innerHTML = "hello WOOOOORLDDDDD";
-            p.innerHTML = "Bugagagagagga";
+            h2.innerHTML = my_data[i][0];
+            p.innerHTML = my_data[i][1];
             parent.appendChild(h2);
             parent.appendChild(p);
             
@@ -58,7 +58,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12" id="bugaga">
+        <div class="col-12 monitor-task mt-3" id="content">
 
         </div>
     </div>
