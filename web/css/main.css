@@ -36,3 +36,13 @@ p{
     border-radius: 10px;
     padding: 10px 10px;
 }
+
+.monitor-task h3{
+    color: aliceblue;
+}
+
+/*Оформлення сторінки з додаванням завдання*/
+
+.add-task{
+    background-image: url('background_add.jpg');
+}
