@@ -46,3 +46,9 @@ p{
 .add-task{
     background-image: url('background_add.jpg');
 }
+textarea{
+    opacity: .7;
+}
+input[type=text]{
+    opacity: .7;
+}

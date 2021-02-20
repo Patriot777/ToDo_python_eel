@@ -29,16 +29,21 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container mt-3">
     <div class="row">
-        <div class="col-12">
-            <textarea id="num1"></textarea>
-            <button id="button" onclick="alls()">Додати</button> 
-            <h4 id = "text"></h4>
-            
+        <div class="col-12 form-group">
+            <input type="text" class="form-control" id="title_task">
+            <textarea class="form-control mt-3" id="text_task" rows="3"></textarea>
+            <button type="button" class="btn btn-secondary mt-3" onclick="get_task()">Додати</button>
         </div>
     </div>
 </div>
-
+<script>
+    function get_task(){
+        let title_task = document.getElementById('title_task').value;
+        let text_task = document.getElementById('text_task').value;
+        eel.test(title_task, text_task);
+    }
+</script>
 </body>
 </html>
