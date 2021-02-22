@@ -11,7 +11,7 @@ eel.init('web', allowed_extensions=['.js', '.html'])
 def returnet_data():
     db = sqlite3.connect('db_task.db')
     cursor = db.cursor()
-    cursor.execute("SELECT title, text FROM tasks")
+    cursor.execute("SELECT id, title, text FROM tasks ORDER BY id DESC")
     title = cursor.fetchall()
     eel.public_task(title)
     db.close()
@@ -21,10 +21,21 @@ def returnet_data():
 def add():
     returnet_data()
 
+#Функція запису в базу данних.
 @eel.expose
-def test(title, text):
-    print(title)
-    print(text)
+def add_task(title, text):
+    title = str(title)
+    text = str(text)
+    db = sqlite3.connect('db_task.db')
+    cursor = db.cursor()
+
+    sql = """INSERT INTO tasks (title, text) VALUES ('{}', '{}')"""
+    sss = sql.format(title, text)
+    
+    cursor.execute(sss)
+    db.commit()
+    db.close()
+    
 
 eel.start('index.html', size=(1366, 768), jinja_templates="templates")
 
