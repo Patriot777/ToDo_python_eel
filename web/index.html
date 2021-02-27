@@ -26,16 +26,29 @@
             let parent = document.getElementById('content');
             let h2 = document.createElement('h3');
             let p = document.createElement('p');
+            let button = document.createElement('button');
+            button.innerHTML = "Кнопка з id: " + my_data[i][0];
+            button.setAttribute('id', my_data[i][0]);
+            button.setAttribute('onClick', 'hello(this.id)');
+            
             h2.innerHTML = my_data[i][1];
             p.innerHTML = my_data[i][2];
             parent.appendChild(h2);
             parent.appendChild(p);
+            parent.appendChild(button);
             
             
-            
-            
-        }
+        };
+        
+        
     };
+    let btn1 = document.getElementById('12');
+        function hello(clicked){
+            
+            alert("hello world " + clicked);
+        };
+     
+    
 </script>
 <div class="container m-menu">
     <div class="row">

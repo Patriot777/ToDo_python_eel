@@ -1,10 +1,6 @@
 import eel
 import sqlite3
 
-#Підключення до бази данних
-#db = sqlite3.connect('db_task.db')
-#cursor = db.cursor()
-
 # Ініціалізація коду
 eel.init('web', allowed_extensions=['.js', '.html'])
 
